@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this research package, please cite it."
+title: "Interpretation Correctability in Adaptive AI"
+type: software
+authors:
+  - family-names: Schneider
+    given-names: Gesa
+year: 2026
+abstract: "Reproducibility package for six controlled experiments on memory integrity, interpretation, verification, and calibration in adaptive AI."
+license: MIT
