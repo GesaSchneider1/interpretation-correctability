@@ -1,4 +1,4 @@
-# Interpretation Correctability in Adaptive AI
+# Interpretation Correctability
 
 **Six controlled experiments on memory integrity, interpretation, verification, and calibration in adaptive AI.**
 
@@ -36,7 +36,7 @@ The cross-experiment result is not that one memory architecture wins. It is that
 
 For the shortest independent replication, start with **Experiment 6**:
 
-1. Open `notebooks/experiment_6_decomposed_verification.ipynb` in Google Colab.
+1. Open [`notebooks/experiment_6_decomposed_verification.ipynb`](notebooks/experiment_6_decomposed_verification.ipynb) in GitHub or [launch it in Google Colab](https://colab.research.google.com/github/GesaSchneider1/interpretation-correctability/blob/main/notebooks/experiment_6_decomposed_verification.ipynb).
 2. Use a GPU runtime.
 3. Run the notebook without changing the frozen cases or verifier prompts.
 4. Compare your metrics with `results/experiment_6/original_results_archive.zip`.
@@ -56,12 +56,10 @@ See [`REPRODUCE.md`](REPRODUCE.md) for the full reproduction guide and [`PROTOCO
 ## Repository structure
 
 ```text
-assets/
-  interpretation_correctability_model.png
-docs/
-  public_research_note.pdf
-  public_research_note.docx
-  internal_research_synthesis_v1.docx
+interpretation_correctability_model.png
+public_research_note.pdf
+public_research_note.docx
+internal_research_synthesis_v1.docx
 notebooks/
   experiment_1_memory_integrity.ipynb
   experiment_1_benchmark.py
