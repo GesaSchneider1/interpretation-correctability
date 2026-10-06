@@ -1,0 +1,7 @@
+transformers>=4.45
+accelerate
+sentencepiece
+torch
+pandas
+numpy
+openai>=1.0
