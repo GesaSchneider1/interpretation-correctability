@@ -5,7 +5,7 @@
 > **Correct memory does not guarantee correct understanding.**  
 > An AI can preserve what a person said while its interpretation becomes unsupported, no longer valid, or too broad.
 
-![Interpretation Correctability research model](assets/interpretation_correctability_model.png)
+![Interpretation Correctability research model](interpretation_correctability_model.png)
 
 ## Why this repository exists
 
@@ -105,7 +105,7 @@ Please read [`LIMITATIONS.md`](LIMITATIONS.md) before citing broader conclusions
 
 ## Research note
 
-The concise public summary is available at [`docs/public_research_note.pdf`](docs/public_research_note.pdf).
+The concise public summary is available at [`public_research_note.pdf`](public_research_note.pdf).
 
 ## Independent replication
 
