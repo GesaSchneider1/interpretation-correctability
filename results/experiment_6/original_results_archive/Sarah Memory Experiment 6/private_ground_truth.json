@@ -1,0 +1,114 @@
+{
+  "S1": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "S2": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "S3": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "S4": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "S5": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "S6": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "S7": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "S8": {
+    "decision": "ACCEPT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "NONE"
+  },
+  "E1": {
+    "decision": "REJECT",
+    "entailment": "FAIL",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "ENTAILMENT"
+  },
+  "E2": {
+    "decision": "REJECT",
+    "entailment": "FAIL",
+    "temporal": "N/A",
+    "scope": "PASS",
+    "failure": "ENTAILMENT"
+  },
+  "T1": {
+    "decision": "REJECT",
+    "entailment": "PASS",
+    "temporal": "FAIL",
+    "scope": "PASS",
+    "failure": "TEMPORAL"
+  },
+  "T2": {
+    "decision": "REJECT",
+    "entailment": "PASS",
+    "temporal": "FAIL",
+    "scope": "PASS",
+    "failure": "TEMPORAL"
+  },
+  "C1": {
+    "decision": "REJECT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "FAIL",
+    "failure": "SCOPE"
+  },
+  "C2": {
+    "decision": "REJECT",
+    "entailment": "PASS",
+    "temporal": "N/A",
+    "scope": "FAIL",
+    "failure": "SCOPE"
+  },
+  "X1": {
+    "decision": "REJECT",
+    "entailment": "FAIL",
+    "temporal": "FAIL",
+    "scope": "FAIL",
+    "failure": "MIXED"
+  },
+  "X2": {
+    "decision": "REJECT",
+    "entailment": "FAIL",
+    "temporal": "N/A",
+    "scope": "FAIL",
+    "failure": "MIXED"
+  }
+}

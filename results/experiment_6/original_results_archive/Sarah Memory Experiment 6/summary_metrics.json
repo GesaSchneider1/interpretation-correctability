@@ -1,0 +1,31 @@
+{
+  "HV": {
+    "accuracy": 0.8125,
+    "sensitivity_corruption_rejection": 0.625,
+    "specificity_valid_acceptance": 1.0,
+    "false_rejection_rate": 0.0,
+    "false_acceptance_rate": 0.375,
+    "correct_n": 13
+  },
+  "DV_model_composed": {
+    "accuracy": 0.5,
+    "sensitivity_corruption_rejection": 1.0,
+    "specificity_valid_acceptance": 0.0,
+    "false_rejection_rate": 1.0,
+    "false_acceptance_rate": 0.0,
+    "correct_n": 8
+  },
+  "DV_mechanical": {
+    "accuracy": 0.5,
+    "sensitivity_corruption_rejection": 1.0,
+    "specificity_valid_acceptance": 0.0,
+    "false_rejection_rate": 1.0,
+    "false_acceptance_rate": 0.0,
+    "correct_n": 8
+  },
+  "DV_components": {
+    "entailment_accuracy": 0.8125,
+    "temporal_accuracy": 0.1875,
+    "scope_accuracy": 0.25
+  }
+}

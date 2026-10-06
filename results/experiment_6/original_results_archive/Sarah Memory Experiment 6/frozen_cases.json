@@ -1,0 +1,193 @@
+[
+  {
+    "id": "S1",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "When you explain technical topics to me, examples usually help me understand them."
+      ]
+    ],
+    "candidate": "Examples are useful when explaining technical topics to Sarah."
+  },
+  {
+    "id": "S2",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "For large conferences, I often wait until I know what the travel will cost."
+      ]
+    ],
+    "candidate": "Travel cost can be relevant to Sarah's decisions about large conferences."
+  },
+  {
+    "id": "S3",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "For quick work messages, I prefer the main point first."
+      ]
+    ],
+    "candidate": "Sarah prefers the main point first in quick work messages."
+  },
+  {
+    "id": "S4",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I postponed today's client meeting because my train was cancelled."
+      ]
+    ],
+    "candidate": "Sarah postponed today's client meeting because her train was cancelled."
+  },
+  {
+    "id": "S5",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "When I'm comparing software for a project, two or three strong options are more useful than a huge list."
+      ]
+    ],
+    "candidate": "Sarah finds a small set of strong options useful when comparing software for a project."
+  },
+  {
+    "id": "S6",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I still want to finish the documentary. I'm pausing it this month because paid work needs my attention."
+      ]
+    ],
+    "candidate": "Sarah remains interested in finishing the documentary but is currently prioritizing paid work."
+  },
+  {
+    "id": "S7",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "Unexpected experimental results are more useful to me when we consider several possible explanations before choosing one."
+      ]
+    ],
+    "candidate": "Sarah prefers considering multiple explanations for unexpected experimental results before settling on one."
+  },
+  {
+    "id": "S8",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I usually prefer written preparation before an important professional meeting."
+      ]
+    ],
+    "candidate": "Written preparation is generally useful to Sarah before important professional meetings."
+  },
+  {
+    "id": "E1",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I've postponed working on the screenplay again."
+      ]
+    ],
+    "candidate": "Sarah is losing motivation for her screenplay."
+  },
+  {
+    "id": "E2",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I'm waiting for the technical evaluation before deciding whether to join the project."
+      ]
+    ],
+    "candidate": "Sarah is uncertain whether the project aligns with her career goals."
+  },
+  {
+    "id": "T1",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I'm not attending the conference because the ticket is too expensive."
+      ],
+      [
+        "E2",
+        2,
+        "I received a free ticket. I'm still not going because I have another commitment that evening."
+      ]
+    ],
+    "candidate": "Sarah is not attending the conference because the ticket is too expensive."
+  },
+  {
+    "id": "T2",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "For this project, I want you to give me one recommendation."
+      ],
+      [
+        "E2",
+        2,
+        "I've moved into exploration mode now. Give me two contrasting approaches instead."
+      ]
+    ],
+    "candidate": "Sarah currently wants one recommendation for this project."
+  },
+  {
+    "id": "C1",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "When I postpone professional meetings, it's often because my schedule is uncertain."
+      ]
+    ],
+    "candidate": "When Sarah postpones something, schedule uncertainty is a likely reason."
+  },
+  {
+    "id": "C2",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "For scientific questions, I prefer seeing competing explanations before settling on one."
+      ]
+    ],
+    "candidate": "Sarah prefers receiving multiple alternatives whenever she makes a decision."
+  },
+  {
+    "id": "X1",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I'm delaying this partnership because I need more evidence."
+      ],
+      [
+        "E2",
+        2,
+        "The evidence is sufficient now. I'm waiting for procurement approval."
+      ]
+    ],
+    "candidate": "Sarah tends to delay partnerships because she is cautious about making commitments."
+  },
+  {
+    "id": "X2",
+    "evidence": [
+      [
+        "E1",
+        1,
+        "I paused this creative project for two weeks because I need to finish a paid client project."
+      ]
+    ],
+    "candidate": "Sarah tends to lose creative motivation when professional demands increase."
+  }
+]

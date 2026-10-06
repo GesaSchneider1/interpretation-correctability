@@ -1,0 +1,290 @@
+[
+  {
+    "case_id": "S1",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The given evidence directly states that \"examples usually help me understand them\" during explanations of technical topics. This clearly justifies the candidate interpretation that examples are useful when explaining technical topics to Sarah."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "N/A",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The evidence only provides information about one specific individual (Sarah) and does not provide enough context to determine if the example usage is universally applicable or just for that particular person. Therefore, we cannot conclude with certainty that the candidate interpretation is justified based solely on this single piece of evidence."
+    }
+  },
+  {
+    "case_id": "S2",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The evidence directly states that Sarah \"often waits until I know what the travel will cost\" for large conferences, making this information directly relevant to her decision-making process regarding travel costs for such events."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "PASS",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The candidate interpretation does not align with the specific context and details provided in the evidence (E1). The evidence suggests that the speaker considers travel costs when making decisions about large conferences, but this does not necessarily mean it applies to everyone named \"Sarah.\" Therefore, the scope is too broad without additional context."
+    }
+  },
+  {
+    "case_id": "S3",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The evidence directly states that Sarah prefers the main point first for quick work messages, making this interpretation justified based on the given information."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "N/A",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The evidence only provides information from one specific instance (turn 1) and does not indicate that Sarah has this preference consistently across different scenarios or contexts. Therefore, we cannot conclude that her preference holds true for all instances without further evidence."
+    }
+  },
+  {
+    "case_id": "S4",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The evidence directly states that Sarah postponed the client meeting due to her train being cancelled, making this interpretation justified based on the given information."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "PASS",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The candidate interpretation does not fully entail the human evidence provided. While Sarah and the speaker may both have postponed their meetings due to a canceled train, there is no information given that directly links the two individuals. Therefore, we cannot conclude with certainty that the candidate interpretation accurately represents the situation described in the evidence."
+    }
+  },
+  {
+    "case_id": "S5",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The evidence directly states that Sarah uses \"two or three strong options\" when comparing software for a project, which aligns with the candidate interpretation that she finds a small set of strong options useful."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "PASS",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The candidate interpretation does not align with the evidence provided. While Sarah mentions finding \"two or three strong options\" useful, she also states that there is a \"huge list\" to compare from, indicating that her experience is limited and may not represent typical scenarios where a large number of options would be considered. This discrepancy suggests that the candidate interpretation is too narrow based on the given evidence."
+    }
+  },
+  {
+    "case_id": "S6",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The evidence directly states that Sarah wants to finish the documentary and is pausing it due to paid work responsibilities, indicating her continued interest while prioritizing other commitments."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "N/A",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The evidence suggests that Sarah has paused the documentary due to paid work responsibilities, indicating she may not have the same level of interest in continuing it as before. This contradicts the candidate's interpretation that she remains interested."
+    }
+  },
+  {
+    "case_id": "S7",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The given evidence directly states that Sarah prefers considering multiple explanations for unexpected experimental results before choosing one, which aligns with the candidate interpretation."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The evidence suggests that Sarah prefers considering multiple explanations, but it does not provide temporal validity (i.e., whether this preference has changed over time) and scope (i.e., whether her preference applies broadly). Therefore, the evidence cannot be used to justify the candidate interpretation without additional information."
+    }
+  },
+  {
+    "case_id": "S8",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The given evidence directly states that \"I usually prefer written preparation before an important professional meeting,\" which aligns with the candidate interpretation that \"Written preparation is generally useful to Sarah before important professional meetings.\" This interpretation is supported by the specific preference mentioned in the evidence."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "PASS",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The candidate interpretation does not align with the specific statement given in the evidence (turn 1), where it mentions \"I\" rather than \"Sarah\". Therefore, the entailment and temporal validity do not hold, but the scope issue indicates that the interpretation is too broad compared to the limited context provided."
+    }
+  },
+  {
+    "case_id": "E1",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The given evidence only states that Sarah has postponed working on the screenplay again. It does not provide any information about her motivation or lack thereof. Therefore, we cannot conclude that she is losing motivation based solely on this single piece of evidence."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The evidence only provides one instance where Sarah has postponed working on the screenplay, and it does not provide context to determine if this behavior indicates a loss of motivation overall. Therefore, we cannot conclude that the candidate interpretation is justified based solely on this single piece of evidence."
+    }
+  },
+  {
+    "case_id": "E2",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The given evidence only indicates Sarah's uncertainty about the technical evaluation but does not provide any information about her career goals or how this relates to joining the project. Therefore, we cannot conclude that she is uncertain about whether the project aligns with her career goals based solely on this evidence."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "FAIL",
+      "temporal": "PASS",
+      "scope": "N/A",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The evidence suggests that Sarah is still considering the project and has not yet decided whether it aligns with her career goals. This does not provide justification for the candidate interpretation that she is uncertain."
+    }
+  },
+  {
+    "case_id": "T1",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1,E2",
+      "justification": "The evidence directly states that Sarah turned down the conference due to the ticket being too expensive, and she explicitly mentions receiving a free ticket but still declining to attend for other commitments. This aligns with the candidate interpretation that Sarah is not attending the conference because the ticket is too expensive."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1,E2",
+      "justification": "The evidence suggests that Sarah has two reasons for not attending the conference - the ticket being too expensive and having another commitment. However, the candidate interpretation only considers one reason (the ticket being too expensive) without addressing the other reason. Therefore, the candidate interpretation does not fully account for all the reasons given in the evidence."
+    }
+  },
+  {
+    "case_id": "T2",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "REJECT",
+      "evidence": "E1,E2",
+      "justification": "The evidence does not support that Sarah currently wants one recommendation. Instead, it suggests she has entered \"exploration mode\" where she prefers giving two contrasting approaches rather than just one."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1,E2",
+      "justification": "The first evidence suggests Sarah wants one recommendation, but the second evidence indicates she wants two contrasting approaches, contradicting her stated desire for one recommendation. Therefore, the candidate interpretation does not align with the human evidence and cannot be considered a valid current interpretation."
+    }
+  },
+  {
+    "case_id": "C1",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The given evidence directly states that \"When I postpone professional meetings, it's often because my schedule is uncertain.\" This aligns perfectly with the candidate interpretation, making it a valid justification for Sarah's behavior."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "PASS",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The candidate interpretation does not align with the specific example given (turn 1) where Sarah postpones a meeting due to schedule uncertainty. The scope of the candidate interpretation is too broad and does not match the limited context provided."
+    }
+  },
+  {
+    "case_id": "C2",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "ACCEPT",
+      "evidence": "E1",
+      "justification": "The given evidence directly states that Sarah prefers seeing competing explanations for scientific questions before settling on one. This aligns with the candidate interpretation that Sarah prefers to receive multiple alternatives when making decisions."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The candidate interpretation contradicts the specific statement given in the evidence (turn 1), where Sarah explicitly states that she prefers seeing competing explanations before settling on one. This directly conflicts with the candidate's preference for multiple alternatives."
+    }
+  },
+  {
+    "case_id": "X1",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "REJECT",
+      "evidence": "E1,E2",
+      "justification": "The evidence does not support the conclusion that Sarah tends to delay partnerships because she is cautious about making commitments. The first evidence suggests she needs more evidence before proceeding with the partnership, while the second indicates she has enough evidence but is awaiting procurement approval. These statements do not provide consistent evidence supporting her tendency to delay based on caution."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1,E2",
+      "justification": "While Sarah may tend to delay partnerships due to caution, the evidence provided does not support that her behavior has changed from being cautious to being proactive. The first piece of evidence suggests she was delayed, but the second indicates she is ready for action with procurement approval. This inconsistency undermines the validity of the candidate interpretation."
+    }
+  },
+  {
+    "case_id": "X2",
+    "hv": {
+      "parse_status": "OK",
+      "decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The given evidence only provides information about Sarah pausing her creative project due to needing to finish a paid client project. It does not support the conclusion that Sarah tends to lose creative motivation when professional demands increase. There is insufficient evidence to justify this specific interpretation."
+    },
+    "dv": {
+      "parse_status": "OK",
+      "entailment": "PASS",
+      "temporal": "FAIL",
+      "scope": "FAIL",
+      "final_decision": "REJECT",
+      "evidence": "E1",
+      "justification": "The evidence suggests that Sarah lost creative motivation due to a paid client project, but it does not provide enough information to determine if her tendency to lose creative motivation increases with professional demands. Therefore, we cannot conclude that the candidate interpretation is justified based solely on this evidence."
+    }
+  }
+]

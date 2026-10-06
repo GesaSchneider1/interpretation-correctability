@@ -1,0 +1,9 @@
+case_id,expected_failed_dimensions,observed_failed_dimensions,full_localization_correct,all_expected_failures_detected
+E1,['ENTAILMENT'],"['SCOPE', 'TEMPORAL']",False,False
+E2,['ENTAILMENT'],['ENTAILMENT'],True,True
+T1,['TEMPORAL'],"['SCOPE', 'TEMPORAL']",False,True
+T2,['TEMPORAL'],"['SCOPE', 'TEMPORAL']",False,True
+C1,['SCOPE'],['SCOPE'],True,True
+C2,['SCOPE'],"['SCOPE', 'TEMPORAL']",False,True
+X1,"['ENTAILMENT', 'SCOPE', 'TEMPORAL']","['SCOPE', 'TEMPORAL']",False,False
+X2,"['ENTAILMENT', 'SCOPE']","['SCOPE', 'TEMPORAL']",False,False

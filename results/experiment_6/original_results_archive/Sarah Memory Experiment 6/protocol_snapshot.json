@@ -1,0 +1,30 @@
+{
+  "experiment": "Experiment 6: Decomposed Interpretation Verification",
+  "phase": "A verification only",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "do_sample": false,
+  "case_order": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "E1",
+    "E2",
+    "T1",
+    "T2",
+    "C1",
+    "C2",
+    "X1",
+    "X2"
+  ],
+  "hv_prompt": "You are evaluating whether an AI's current interpretation of a person is justified by the human evidence provided.\n\nConsider the exact meaning of the evidence, the order of statements when more than one statement is present, and the context in which each statement applies.\n\nDecide whether the candidate interpretation is justified as a current interpretation of the person.\n\nDo not accept an interpretation merely because it is plausible. Do not infer motives, traits, preferences, causes, or general patterns beyond what the evidence supports.\n\nReturn exactly:\n\nDECISION: <ACCEPT|REJECT>\nEVIDENCE: <comma separated evidence IDs>\nJUSTIFICATION: <one concise explanation>",
+  "dv_prompt": "You are evaluating whether an AI's current interpretation of a person is justified by the human evidence provided.\n\nEvaluate the candidate independently on three dimensions.\n\nENTAILMENT: Does the human evidence justify every substantive claim made by the candidate interpretation? Do not treat plausibility as evidence.\n\nTEMPORAL VALIDITY: Considering the order of relevant evidence, is the candidate valid as the current interpretation?\n\nSCOPE: Is the candidate no broader in people, situations, contexts, causes, preferences, or generality than the evidence warrants?\n\nPerform all three checks for every case. Do not assume which dimension, if any, contains a problem.\n\nThen make your own final judgment about whether the candidate should be accepted as a current interpretation.\n\nReturn exactly:\n\nENTAILMENT: <PASS|FAIL|N/A>\nTEMPORAL_VALIDITY: <PASS|FAIL|N/A>\nSCOPE: <PASS|FAIL|N/A>\nEVIDENCE: <comma separated evidence IDs>\nFINAL_DECISION: <ACCEPT|REJECT>\nJUSTIFICATION: <one concise explanation>",
+  "mechanical_dv_rule": "ACCEPT iff all applicable DV dimensions PASS; N/A is non-failing; any FAIL => REJECT",
+  "repair_enabled": false,
+  "behavior_probes_enabled": false
+}
