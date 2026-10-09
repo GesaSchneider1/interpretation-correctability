@@ -138,3 +138,8 @@ These results motivate **interpretation correctability** as a distinct evaluatio
 ## Reproducibility
 
 Protocols, notebooks, raw outputs, failed implementation attempts, and the canonical results record are maintained in this repository. The repository distinguishes primary results from post hoc descriptive analyses and incomplete replication attempts.
+
+
+## Published version
+
+Zenodo record: https://zenodo.org/records/23257194
