@@ -32,7 +32,7 @@ We use the term **interpretation correctability** for the ability of an adaptive
 
 ## 2. Related Work
 
-Recent work increasingly treats long-term memory as an update problem rather than only a retrieval problem. Preference-Aware Memory Update introduces mechanisms for adapting preference representations as user behavior evolves [1]. Supersede isolates the difficulty of maintaining the current value of facts after later corrections and reports that this gap persists even when stronger models are used [2]. THEANINE retains outdated memories in temporal timelines instead of simply deleting them [3]. APEX-MEM similarly uses append-only storage and resolves conflicting or evolving information at query time [4].
+Recent work increasingly treats long-term memory as an update problem rather than only a retrieval problem. Preference-Aware Memory Update introduces mechanisms for adapting preference representations as user behavior evolves [1]. Supersede isolates the difficulty of maintaining the current value of facts after later corrections and reports that this gap persists even when stronger models are used [2]. THEANINE retains outdated memories in temporal timelines instead of simply deleting them [3]. Recent work has also explored append-only agent memory with temporal reasoning and query-time resolution of conflicting or evolving information [4].
 
 Other work highlights provenance, interpretation, and personalization boundaries. Agent Zero Memory makes provenance, timestamps, and evidence pointers first-class properties of stored information [5]. Beyond Recall argues that user representation is not reducible to recall and evaluates an interpretive behavioral specification layer [6]. PersonaMem-v3 explicitly evaluates whether agents can hold back when personalization would be inappropriate, outdated, repetitive, or unnecessary [7]. Characterizing Memory Misalignment identifies user-facing failures spanning intake, storage, management, retrieval, and interpretation [8].
 
@@ -129,7 +129,7 @@ These results motivate **interpretation correctability** as a distinct evaluatio
 1. Sun, H., Zhang, Z., & Zeng, S. (2026). *Preference-Aware Memory Update for Long-Term LLM Agents.* Findings of ACL 2026. https://doi.org/10.18653/v1/2026.findings-acl.38
 2. Patel, V. (2026). *Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents.* arXiv:2606.27472.
 3. Ong, K. T.-i., Kim, N., Gwak, M., et al. (2025). *Towards Lifelong Dialogue Agents via Timeline-based Memory Management.* NAACL 2025. https://aclanthology.org/2025.naacl-long.435/
-4. Banerjee, P., Moshtaghi, M., Subramanian, S., Misra, A., & Chadha, A. (2026). *APEX-MEM: Agentic Semi-Structured Memory with Temporal Reasoning for Long-Term Conversational AI.* arXiv:2604.14362.
+4. Banerjee, P., Moshtaghi, M., Subramanian, S., Misra, A., & Chadha, A. (2026). *APEX MEM.* arXiv:2604.14362.
 5. Wu, M., & Zhu, P. (2026). *Agent Zero Memory: Provenance-Aware Long-Term Memory for LLM Agents.* arXiv:2608.29606.
 6. Gulaya, A. (2026). *Beyond Recall: Behavioral Specification as an Interpretive Layer for AI Personalization.* arXiv:2605.28969.
 7. Jiang, B., Yuan, Y., Hao, Z., et al. (2026). *PersonaMem-v3: Toward Omni-Platform Personal Intelligence for Holistic User Understanding, Recommendation, and Agentic Tasks.* arXiv:2608.21381.
