@@ -7,6 +7,12 @@
 
 ![Interpretation Correctability research model](interpretation_correctability_model.png)
 
+## Published version
+
+The research summary is available on Zenodo:
+
+https://zenodo.org/records/23257194
+
 ## Why this repository exists
 
 Adaptive AI systems increasingly retain information about people over time. That creates a problem beyond recall: even when the underlying human evidence is preserved, the system can form an interpretation that is unsupported, no longer current, too broad, or incorrectly applied.
