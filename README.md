@@ -1,5 +1,7 @@
 # Interpretation Correctability
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23257194.svg)](https://doi.org/10.5281/zenodo.23257194)
+
 **Six controlled experiments on memory integrity, interpretation, verification, and calibration in adaptive AI.**
 
 > **Correct memory does not guarantee correct understanding.**  
@@ -11,7 +13,7 @@
 
 The research summary is available on Zenodo:
 
-https://zenodo.org/records/23257194
+**DOI:** [10.5281/zenodo.23257194](https://doi.org/10.5281/zenodo.23257194)
 
 ## Why this repository exists
 
