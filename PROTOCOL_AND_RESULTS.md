@@ -68,6 +68,29 @@ DV component accuracy: entailment 81.25%; temporal validity 18.75%; scope 25%.
 
 **Interpretation:** decomposition increased sensitivity while destroying specificity. The preregistered conservatism counterhypothesis was supported. Phase B repair was not run.
 
+
+### Cross-Model Replication: NVIDIA Nemotron 3 Ultra via OpenRouter
+
+**Status:** successful cross-model Phase A replication. All 16 frozen cases completed, all HV and DV outputs parsed successfully, and preregistered scoring was completed. The frozen cases, prompts, case order, parser, scoring, and stop rules were unchanged. The hosted OpenRouter runtime differed from the original local Qwen run. Provider-side reasoning was explicitly disabled so the frozen 220/280 answer-token ceilings applied to generated responses.
+
+**Reported metrics:**
+
+| Condition | Accuracy | Corruption detection | Valid personalization |
+|---|---:|---:|---:|
+| Holistic verifier | 14/16 (87.5%) | 8/8 (100%) | 6/8 (75%) |
+| Decomposed verifier, model decision | 15/16 (93.75%) | 8/8 (100%) | 7/8 (87.5%) |
+| Decomposed verifier, mechanical | 15/16 (93.75%) | 8/8 (100%) | 7/8 (87.5%) |
+
+DV component accuracy: entailment 68.75%; temporal validity 18.75%; scope 68.75%.
+
+**Interpretation:** unlike the original Qwen run, decomposed verification did not produce universal over-rejection on Nemotron. It rejected all eight corrupted interpretations while preserving seven of eight valid interpretations. The Experiment 6 calibration effect therefore appears model-dependent rather than an inevitable consequence of decomposition itself.
+
+**Important qualification:** final classification performance was substantially stronger than component-level fidelity. Nemotron sometimes introduced unintended identity literalism. In S4 it rejected a valid interpretation because the human evidence used first-person “I” rather than explicitly naming “Sarah.” It also frequently returned temporal-validity PASS where the frozen rubric expected N/A in cases with no temporal update. Final decision metrics and dimensional-label accuracy should therefore be interpreted separately.
+
+**Cross-model comparison:** on Qwen, decomposition increased corruption sensitivity from 5/8 to 8/8 but reduced valid-interpretation acceptance from 8/8 to 0/8. On Nemotron, decomposition retained 8/8 corruption detection while accepting 7/8 valid interpretations. This suggests that decomposed verification can improve discrimination, but the calibration and interpretation of the verification dimensions depend strongly on the model implementing them.
+
+**Implementation record:** an earlier Nemotron attempt stopped at S1 because the frozen output ceiling was consumed before a complete HV response was produced. No result from that attempt was scored. The successful run explicitly disabled provider-side reasoning while leaving the scientific cases, prompts, parser, scoring, and stop rules unchanged.
+
 ## Cross-experiment finding
 
 The six experiments motivate, but do not prove, **Interpretation Correctability**: the ability of an adaptive AI to maintain useful inferences about a person while preserving the distinction between human-supplied evidence and machine-generated interpretation, and to detect, revise, or withdraw interpretations when they become unsupported, no longer valid, contradicted, or contextually inappropriate.
