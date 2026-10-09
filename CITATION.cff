@@ -6,6 +6,7 @@ authors:
   - family-names: Schneider
     given-names: Gesa
 year: 2026
+doi: "10.5281/zenodo.23257194"
 abstract: "Reproducibility package for six controlled experiments on memory integrity, interpretation, verification, and calibration in adaptive AI."
 license: MIT
 
