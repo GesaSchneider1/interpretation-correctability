@@ -26,7 +26,7 @@ The work does **not** establish a universally superior memory architecture or a 
 | 3 | Evidence | Immutable evidence preserved a recovery path, but did not guarantee faithful reconstruction or behavior. |
 | 4 | Interpretation | Evidence grounding rejected several unsupported beliefs, while still producing interpretation and application failures. |
 | 5 | Verification | A verifier accepted all four deliberately corrupted interpretations as supported, so no repair occurred. |
-| 6 | Calibration | Decomposition caught 8/8 corruptions but rejected 8/8 valid interpretations. Sensitivity improved while calibration collapsed. |
+| 6 | Calibration | The effect was model dependent: Qwen decomposition caught 8/8 corruptions but rejected 8/8 valid interpretations, while Nemotron decomposition caught 8/8 corruptions and retained 7/8 valid interpretations. |
 
 **Research progression:** `Memory -> Revision -> Evidence -> Interpretation -> Verification -> Calibration`
 
@@ -49,9 +49,9 @@ The original run reported:
 | Holistic verifier | 13/16 (81.25%) | 5/8 (62.5%) | 8/8 (100%) |
 | Decomposed verifier | 8/16 (50%) | 8/8 (100%) | 0/8 (0%) |
 
-A verifier that rejects every interpretation is not a successful verifier.
+A verifier that rejects every interpretation is not a successful verifier. A successful cross-model replication with NVIDIA Nemotron 3 Ultra reached 15/16 overall accuracy under decomposed verification, with 8/8 corruption detection and 7/8 valid-personalization preservation. This contrast is part of the main result: verification calibration appears model dependent.
 
-See [`REPRODUCE.md`](REPRODUCE.md) for the full reproduction guide and [`PROTOCOL_AND_RESULTS.md`](PROTOCOL_AND_RESULTS.md) for the canonical experiment record.
+A manuscript draft is available in [`RESEARCH_NOTE.md`](RESEARCH_NOTE.md). See [`REPRODUCE.md`](REPRODUCE.md) for the full reproduction guide and [`PROTOCOL_AND_RESULTS.md`](PROTOCOL_AND_RESULTS.md) for the canonical experiment record.
 
 ## Repository structure
 
@@ -68,6 +68,7 @@ notebooks/
   experiment_4_interpretation_correctability.ipynb
   experiment_5_verification_recovery.ipynb
   experiment_6_decomposed_verification.ipynb
+  experiment_6_replication_nemotron3ultra_openrouter_noreasoning.ipynb
 results/
   experiment_1/
   experiment_2/
