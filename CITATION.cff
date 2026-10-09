@@ -8,3 +8,6 @@ authors:
 year: 2026
 abstract: "Reproducibility package for six controlled experiments on memory integrity, interpretation, verification, and calibration in adaptive AI."
 license: MIT
+
+repository-code: "https://github.com/GesaSchneider1/interpretation-correctability"
+url: "https://zenodo.org/records/23257194"
